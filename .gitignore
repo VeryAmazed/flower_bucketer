@@ -11,3 +11,4 @@ dist/
 # Keep local photo storage out of git.
 flower_inbox/
 flower_buckets/
+low_confidence/

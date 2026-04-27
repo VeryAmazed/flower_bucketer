@@ -25,7 +25,8 @@ def main() -> None:
     scan_parser.add_argument("--dry-run", action="store_true", help="Preview without API calls or copying")
 
     subparsers.add_parser("quota", help="Show Pl@ntNet daily quota")
-    subparsers.add_parser("restore-plan", help="Print bucket paths from the manifest")
+    sync_parser = subparsers.add_parser("sync-manifest", help="Add bucketed files missing from the manifest")
+    sync_parser.add_argument("--dry-run", action="store_true", help="Preview manifest rows without writing")
 
     args = parser.parse_args()
     config = load_config(Path(args.config))
@@ -37,6 +38,7 @@ def main() -> None:
         scan(
             config.paths.inbox_dir,
             config.paths.bucket_root,
+            config.paths.low_confidence_dir,
             config.paths.manifest_csv,
             client,
             config.plantnet.min_score,
@@ -45,11 +47,19 @@ def main() -> None:
     elif args.command == "quota":
         client = make_client(config)
         show_quota(client)
+    elif args.command == "sync-manifest":
+        sync_manifest(
+            config.paths.bucket_root,
+            config.paths.low_confidence_dir,
+            config.paths.manifest_csv,
+            args.dry_run,
+        )
 
 
 def scan(
     inbox_dir: Path,
     bucket_root: Path,
+    low_confidence_dir: Path,
     manifest_path: Path,
     client: PlantNetClient | None,
     min_score: float,
@@ -72,6 +82,14 @@ def scan(
             print(f"SKIP filename already exists in bucket root: {image_path.name} -> {existing}")
             continue
 
+        existing_low_confidence = find_existing_filename(low_confidence_dir, image_path.name)
+        if existing_low_confidence:
+            print(
+                "SKIP filename already exists in low-confidence folder: "
+                f"{image_path.name} -> {existing_low_confidence}"
+            )
+            continue
+
         if dry_run:
             print(f"WOULD IDENTIFY: {image_path}")
             continue
@@ -81,9 +99,11 @@ def scan(
 
         identification = client.identify(image_path)
         if identification.score < min_score:
+            low_confidence_destination = low_confidence_dir / image_path.name
+            copy_image(image_path, low_confidence_destination)
             print(
                 f"LOW CONFIDENCE: {image_path.name} -> {identification.best_match} "
-                f"({identification.score:.3f}); not copying"
+                f"({identification.score:.3f}); copied to {low_confidence_destination}"
             )
             continue
 
@@ -122,6 +142,80 @@ def make_manifest_row(
         plantnet_gbif_id=identification.gbif_id,
         identified_at=utc_now(),
     )
+
+
+def sync_manifest(
+    bucket_root: Path,
+    low_confidence_dir: Path,
+    manifest_path: Path,
+    dry_run: bool,
+) -> None:
+    if not bucket_root.exists():
+        raise SystemExit(f"Bucket root does not exist: {bucket_root}")
+
+    rows = load_rows(manifest_path)
+    known_filenames = {row.get("filename") for row in rows}
+    synced_count = 0
+
+    for image_path in iter_bucketed_images(bucket_root, low_confidence_dir):
+        if image_path.name in known_filenames:
+            continue
+
+        row = make_synced_manifest_row(bucket_root, image_path)
+        if dry_run:
+            print(f"WOULD ADD: {row.filename} -> {row.bucket_relative_path}")
+        else:
+            append_row(manifest_path, row)
+            print(f"ADDED: {row.filename} -> {row.bucket_relative_path}")
+
+        known_filenames.add(image_path.name)
+        synced_count += 1
+
+    if synced_count == 0:
+        print("Manifest already matches bucket folders.")
+
+
+def iter_bucketed_images(bucket_root: Path, low_confidence_dir: Path) -> list[Path]:
+    low_confidence_dir = low_confidence_dir.resolve()
+    images = []
+
+    for path in sorted(bucket_root.rglob("*")):
+        if not path.is_file():
+            continue
+        if path.suffix.lower() not in {".jpg", ".jpeg", ".png"}:
+            continue
+        if _is_relative_to(path.resolve(), low_confidence_dir):
+            continue
+        images.append(path)
+
+    return images
+
+
+def make_synced_manifest_row(bucket_root: Path, image_path: Path) -> ManifestRow:
+    relative_path = image_path.relative_to(bucket_root)
+    genus = relative_path.parts[0] if len(relative_path.parts) > 1 else ""
+
+    return ManifestRow(
+        filename=image_path.name,
+        bucket_genus=genus,
+        bucket_relative_path=str(relative_path),
+        plantnet_best_match="",
+        plantnet_species_without_author="",
+        plantnet_genus="",
+        plantnet_family="",
+        plantnet_score="",
+        plantnet_gbif_id="",
+        identified_at=utc_now(),
+        notes="synced from bucket folder",
+    )
+
+
+def _is_relative_to(path: Path, parent: Path) -> bool:
+    try:
+        path.relative_to(parent)
+        return True
+    except ValueError:
+        return False
 
 
 def show_quota(client: PlantNetClient) -> None:

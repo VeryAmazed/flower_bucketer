@@ -13,6 +13,7 @@ DEFAULT_CONFIG_PATH = Path("config.toml")
 class PathsConfig:
     inbox_dir: Path
     bucket_root: Path
+    low_confidence_dir: Path
     manifest_csv: Path
 
 
@@ -49,6 +50,7 @@ def load_config(config_path: Path = DEFAULT_CONFIG_PATH) -> AppConfig:
         paths=PathsConfig(
             inbox_dir=_required_path(paths, "inbox_dir"),
             bucket_root=_required_path(paths, "bucket_root"),
+            low_confidence_dir=_required_path(paths, "low_confidence_dir"),
             manifest_csv=_required_path(paths, "manifest_csv"),
         ),
         plantnet=PlantNetConfig(

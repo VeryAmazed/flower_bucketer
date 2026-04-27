@@ -14,23 +14,11 @@ source .venv/bin/activate
 pip install -e .
 ```
 
-Copy the example config and fill in your local paths:
-
-```sh
-cp config.example.toml config.toml
-```
-
 `config.toml` is intentionally ignored by git because it points to local folders.
 
 Create a Pl@ntNet account at <https://my.plantnet.org/signup>, then generate your private API key at <https://my.plantnet.org/settings/api-key>.
 
 Put the key in `.env`:
-
-```sh
-cp .env.example .env
-```
-
-Then edit `.env`:
 
 ```sh
 PLANTNET_API_KEY=your-private-api-key-here
@@ -42,6 +30,7 @@ PLANTNET_API_KEY=your-private-api-key-here
 [paths]
 inbox_dir = "/path/to/new_flower_photos"
 bucket_root = "/path/to/local_flower_buckets"
+low_confidence_dir = "/path/to/low_confidence_review"
 manifest_csv = "data/manifest.csv"
 
 [plantnet]
@@ -72,10 +61,16 @@ Check Pl@ntNet quota:
 flower-id quota
 ```
 
-Print the paths recorded in the manifest:
+After manually sorting images from the low-confidence folder into genus buckets, backfill missing bucketed files into the manifest:
 
 ```sh
-flower-id restore-plan
+flower-id sync-manifest
+```
+
+Preview the backfill without writing:
+
+```sh
+flower-id sync-manifest --dry-run
 ```
 
 ## Behavior
@@ -83,8 +78,10 @@ flower-id restore-plan
 - Supported images are `.jpg`, `.jpeg`, and `.png`.
 - One image is sent per Pl@ntNet request.
 - The top Pl@ntNet result is used.
-- If the top score is below `min_score`, the image is not copied and not added to the CSV.
+- If the top score is below `min_score`, the image is copied to `low_confidence_dir` and not added to the CSV.
 - If the image's filename already exists in the manifest, it is skipped.
 - If the same filename already exists anywhere under `bucket_root`, it is skipped.
+- If the same filename already exists anywhere under `low_confidence_dir`, it is skipped.
 - Confident matches are copied to `<bucket_root>/<Genus>/<filename>`.
 - The manifest records only successfully bucketed images.
+- `sync-manifest` scans `bucket_root` and adds any bucketed image filename missing from the manifest. Rows added this way have blank Pl@ntNet fields and `notes` set to `synced from bucket folder`.
