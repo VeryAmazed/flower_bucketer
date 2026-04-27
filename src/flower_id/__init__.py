@@ -1,0 +1,1 @@
+"""Local flower photo bucketing."""

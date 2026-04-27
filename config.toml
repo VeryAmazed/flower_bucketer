@@ -1,0 +1,9 @@
+[paths]
+inbox_dir = "/mnt/c/Users/Alan/OneDrive/Pictures/flower_folder"
+bucket_root = "flower_buckets"
+manifest_csv = "manifest.csv"
+
+[plantnet]
+project = "all"
+min_score = 0.8
+nb_results = 3
