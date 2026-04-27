@@ -1,7 +1,7 @@
 [paths]
 inbox_dir = "/mnt/c/Users/Alan/OneDrive/Pictures/flower_folder"
 bucket_root = "/mnt/c/Users/Alan/Desktop/flower_buckets"
-low_confidence_dir = "low_confidence"
+low_confidence_dir = "/mnt/c/Users/Alan/Desktop/low_confidence"
 manifest_csv = "manifest.csv"
 
 [plantnet]
