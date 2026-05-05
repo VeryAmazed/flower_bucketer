@@ -98,12 +98,12 @@ def scan(
             raise SystemExit("Internal error: live scan requires a Pl@ntNet client.")
 
         identification = client.identify(image_path)
-        if identification.score < min_score:
+        if identification.genus_score < min_score:
             low_confidence_destination = low_confidence_dir / image_path.name
             copy_image(image_path, low_confidence_destination)
             print(
-                f"LOW CONFIDENCE: {image_path.name} -> {identification.best_match} "
-                f"({identification.score:.3f}); copied to {low_confidence_destination}"
+                f"LOW GENUS CONFIDENCE: {image_path.name} -> {identification.genus} "
+                f"({identification.genus_score:.3f}); copied to {low_confidence_destination}"
             )
             continue
 
@@ -134,12 +134,9 @@ def make_manifest_row(
         filename=filename,
         bucket_genus=identification.genus,
         bucket_relative_path=str(destination.relative_to(bucket_root)),
-        plantnet_best_match=identification.best_match,
-        plantnet_species_without_author=identification.species_without_author,
         plantnet_genus=identification.genus,
         plantnet_family=identification.family,
-        plantnet_score=f"{identification.score:.6f}",
-        plantnet_gbif_id=identification.gbif_id,
+        plantnet_genus_score=f"{identification.genus_score:.6f}",
         identified_at=utc_now(),
     )
 
@@ -199,12 +196,9 @@ def make_synced_manifest_row(bucket_root: Path, image_path: Path) -> ManifestRow
         filename=image_path.name,
         bucket_genus=genus,
         bucket_relative_path=str(relative_path),
-        plantnet_best_match="",
-        plantnet_species_without_author="",
         plantnet_genus="",
         plantnet_family="",
-        plantnet_score="",
-        plantnet_gbif_id="",
+        plantnet_genus_score="",
         identified_at=utc_now(),
         notes="synced from bucket folder",
     )

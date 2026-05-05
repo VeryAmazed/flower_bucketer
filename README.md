@@ -77,8 +77,8 @@ flower-id sync-manifest --dry-run
 
 - Supported images are `.jpg`, `.jpeg`, and `.png`.
 - One image is sent per Pl@ntNet request.
-- The top Pl@ntNet result is used.
-- If the top score is below `min_score`, the image is copied to `low_confidence_dir` and not added to the CSV.
+- Pl@ntNet is queried with `detailed=true` so the script can use genus-level confidence.
+- If the top genus score is below `min_score`, the image is copied to `low_confidence_dir` and not added to the CSV.
 - If the image's filename already exists in the manifest, it is skipped.
 - If the same filename already exists anywhere under `bucket_root`, it is skipped.
 - If the same filename already exists anywhere under `low_confidence_dir`, it is skipped.

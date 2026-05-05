@@ -10,12 +10,9 @@ FIELDNAMES = [
     "filename",
     "bucket_genus",
     "bucket_relative_path",
-    "plantnet_best_match",
-    "plantnet_species_without_author",
     "plantnet_genus",
     "plantnet_family",
-    "plantnet_score",
-    "plantnet_gbif_id",
+    "plantnet_genus_score",
     "identified_at",
     "notes",
 ]
@@ -26,12 +23,9 @@ class ManifestRow:
     filename: str
     bucket_genus: str
     bucket_relative_path: str
-    plantnet_best_match: str
-    plantnet_species_without_author: str
     plantnet_genus: str
     plantnet_family: str
-    plantnet_score: str
-    plantnet_gbif_id: str
+    plantnet_genus_score: str
     identified_at: str
     notes: str = ""
 
@@ -40,12 +34,9 @@ class ManifestRow:
             "filename": self.filename,
             "bucket_genus": self.bucket_genus,
             "bucket_relative_path": self.bucket_relative_path,
-            "plantnet_best_match": self.plantnet_best_match,
-            "plantnet_species_without_author": self.plantnet_species_without_author,
             "plantnet_genus": self.plantnet_genus,
             "plantnet_family": self.plantnet_family,
-            "plantnet_score": self.plantnet_score,
-            "plantnet_gbif_id": self.plantnet_gbif_id,
+            "plantnet_genus_score": self.plantnet_genus_score,
             "identified_at": self.identified_at,
             "notes": self.notes,
         }

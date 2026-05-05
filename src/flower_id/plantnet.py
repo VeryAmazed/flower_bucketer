@@ -12,12 +12,9 @@ BASE_URL = "https://my-api.plantnet.org/v2"
 
 @dataclass(frozen=True)
 class Identification:
-    best_match: str
-    species_without_author: str
     genus: str
     family: str
-    score: float
-    gbif_id: str
+    genus_score: float
 
 
 class PlantNetClient:
@@ -43,6 +40,7 @@ class PlantNetClient:
                     "api-key": self.api_key,
                     "nb-results": self.nb_results,
                     "lang": "en",
+                    "detailed": "true",
                 },
                 files={"images": (image_path.name, image_file, _mime_type(image_path))},
                 timeout=90,
@@ -59,22 +57,48 @@ def parse_identification(payload: dict[str, Any]) -> Identification:
 
     top = results[0]
     species = top.get("species") or {}
-    genus = species.get("genus") or {}
-    family = species.get("family") or {}
-    gbif = top.get("gbif") or {}
+    species_genus = species.get("genus") or {}
+    species_family = species.get("family") or {}
+    genus_result = _first_other_result(payload, "genus")
+    family_result = _first_other_result(payload, "family")
 
-    genus_name = genus.get("scientificNameWithoutAuthor") or genus.get("scientificName")
+    genus_name = _taxon_name(genus_result) or _taxon_name(species_genus)
     if not genus_name:
         raise SystemExit("Pl@ntNet result did not include a genus.")
 
     return Identification(
-        best_match=str(payload.get("bestMatch") or species.get("scientificName") or ""),
-        species_without_author=str(species.get("scientificNameWithoutAuthor") or ""),
         genus=str(genus_name),
-        family=str(family.get("scientificNameWithoutAuthor") or family.get("scientificName") or ""),
-        score=float(top.get("score") or 0),
-        gbif_id=str(gbif.get("id") or ""),
+        family=str(_taxon_name(family_result) or _taxon_name(species_family) or ""),
+        genus_score=_score(genus_result, fallback=float(top.get("score") or 0)),
     )
+
+
+def _first_other_result(payload: dict[str, Any], key: str) -> dict[str, Any]:
+    other_results = payload.get("otherResults") or {}
+    results = other_results.get(key) or []
+    if results:
+        return results[0]
+    return {}
+
+
+def _taxon_name(value: Any) -> str:
+    if not isinstance(value, dict):
+        return ""
+
+    taxon = value.get("taxon") or value.get("genus") or value.get("family") or value
+    if not isinstance(taxon, dict):
+        return str(taxon) if taxon else ""
+
+    return str(
+        taxon.get("scientificNameWithoutAuthor")
+        or taxon.get("scientificName")
+        or taxon.get("name")
+        or ""
+    )
+
+
+def _score(value: dict[str, Any], fallback: float = 0) -> float:
+    return float(value.get("score") if value.get("score") is not None else fallback)
 
 
 def _raise_for_status(response: requests.Response) -> None:

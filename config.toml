@@ -6,5 +6,5 @@ manifest_csv = "manifest.csv"
 
 [plantnet]
 project = "all"
-min_score = 0.8
+min_score = 0.65
 nb_results = 3
