@@ -54,6 +54,7 @@ class Flower:
 
 def build_site(config: BuildConfig) -> None:
     rows = load_rows(config.app.paths.manifest_csv)
+    sync_site_content(config.site.content_toml, rows, config.site.title, config.site.description)
     content = load_site_content(config.site.content_toml)
     output_dir = config.site.output_dir
 
@@ -96,17 +97,123 @@ def load_site_content(path: Path) -> SiteContent:
         facts = values.get("facts", [])
         if not isinstance(facts, list):
             raise SystemExit(f"Invalid facts for flowers.{genus}: expected a list of strings.")
+        common_name = str(values.get("common_name", "")).strip()
+        cover_photo = str(values.get("cover_photo", "")).strip()
         flowers[str(genus)] = FlowerContent(
-            common_name=str(values.get("common_name", genus)),
-            cover_photo=str(values.get("cover_photo", "")),
-            facts=tuple(str(fact) for fact in facts),
+            common_name=common_name or str(genus),
+            cover_photo=cover_photo,
+            facts=tuple(str(fact).strip() for fact in facts if str(fact).strip()),
         )
 
+    title = str(site.get("title", "")).strip()
+    description = str(site.get("description", "")).strip()
     return SiteContent(
-        title=str(site["title"]) if "title" in site else None,
-        description=str(site["description"]) if "description" in site else None,
+        title=title or None,
+        description=description or None,
         flowers=flowers,
     )
+
+
+def sync_site_content(
+    path: Path,
+    rows: list[dict[str, str]],
+    default_title: str,
+    default_description: str,
+) -> None:
+    raw = _load_site_content_raw(path)
+    site = raw.get("site", {})
+    existing_flowers = raw.get("flowers", {})
+    if not isinstance(existing_flowers, dict):
+        raise SystemExit("Invalid site content: expected [flowers] tables.")
+
+    genera = _manifest_genera(rows)
+    rendered = _render_site_content_toml(site, existing_flowers, genera, default_title, default_description)
+    existing = path.read_text(encoding="utf-8") if path.exists() else ""
+    if existing != rendered:
+        _write_text(path, rendered)
+        print(f"Synced {path} with {len(genera)} manifest genera.")
+
+
+def _load_site_content_raw(path: Path) -> dict:
+    if not path.exists():
+        return {}
+
+    with path.open("rb") as content_file:
+        return tomllib.load(content_file)
+
+
+def _manifest_genera(rows: list[dict[str, str]]) -> list[str]:
+    genera = {
+        (row.get("bucket_genus") or "").strip()
+        for row in rows
+        if (row.get("bucket_genus") or "").strip()
+    }
+    if not genera:
+        raise SystemExit("No bucketed flowers found in manifest.")
+    return sorted(genera)
+
+
+def _render_site_content_toml(
+    site: dict,
+    existing_flowers: dict,
+    genera: list[str],
+    default_title: str,
+    default_description: str,
+) -> str:
+    title = str(site.get("title", default_title)).strip()
+    description = str(site.get("description", default_description)).strip()
+    lines = [
+        "[site]",
+        f"title = {_toml_string(title)}",
+        f"description = {_toml_string(description)}",
+        "",
+    ]
+
+    for genus in genera:
+        values = existing_flowers.get(genus, {})
+        if not isinstance(values, dict):
+            raise SystemExit(f"Invalid site content for flowers.{genus}: expected a table.")
+
+        facts = values.get("facts", [])
+        if not isinstance(facts, list):
+            raise SystemExit(f"Invalid facts for flowers.{genus}: expected a list of strings.")
+
+        lines.extend(
+            [
+                f"[flowers.{_toml_key(genus)}]",
+                f"common_name = {_toml_string(str(values.get('common_name', '')).strip())}",
+                f"cover_photo = {_toml_string(str(values.get('cover_photo', '')).strip())}",
+                _render_facts_toml(facts),
+                "",
+            ]
+        )
+
+    return "\n".join(lines)
+
+
+def _render_facts_toml(facts: list) -> str:
+    cleaned = [str(fact).strip() for fact in facts if str(fact).strip()]
+    if not cleaned:
+        return "facts = []"
+
+    lines = ["facts = ["]
+    lines.extend(f"  {_toml_string(fact)}," for fact in cleaned)
+    lines.append("]")
+    return "\n".join(lines)
+
+
+def _toml_string(value: str) -> str:
+    escaped = (
+        value
+        .replace("\\", "\\\\")
+        .replace('"', '\\"')
+        .replace("\n", "\\n")
+    )
+    return f'"{escaped}"'
+
+
+def _toml_key(value: str) -> str:
+    return _toml_string(value)
 
 
 def _build_flowers(
@@ -128,10 +235,6 @@ def _build_flowers(
 
     if not rows_by_genus:
         raise SystemExit("No bucketed flowers found in manifest.")
-
-    missing_genus = sorted(set(content.flowers) - set(rows_by_genus))
-    if missing_genus:
-        raise SystemExit(f"site.toml references genera not present in manifest: {', '.join(missing_genus)}")
 
     flowers = []
     for genus in sorted(rows_by_genus):

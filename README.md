@@ -47,14 +47,23 @@ output_dir = "docs"
 
 The inbox can keep your source images. Successfully bucketed images are copied into genus folders, not moved.
 
-`site.toml` is committed and controls how buckets appear on the generated website. Genera not listed in `site.toml` still appear on the site using the genus as the display name and the first manifest image as the cover.
+`site.toml` is committed and controls how buckets appear on the generated website. `flower-site build` keeps it in sync with `manifest.csv` by adding one blank section per genus. Blank fields are ignored, so a flower with no edits uses the genus as the display name and the first manifest image as the cover.
 
 ```toml
 [site]
 title = "Flower Buckets"
 description = "A generated gallery of locally bucketed flower photos."
 
-[flowers.Rosa]
+[flowers."Rosa"]
+common_name = ""
+cover_photo = ""
+facts = []
+```
+
+Fill in only the fields you want to override:
+
+```toml
+[flowers."Rosa"]
 common_name = "Rose"
 cover_photo = "Rosa/PXL_20260329_235810394.MP.jpg"
 facts = [

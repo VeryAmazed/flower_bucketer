@@ -2,13 +2,402 @@
 title = "Flower Buckets"
 description = "A generated gallery of locally bucketed flower photos."
 
-# Add optional per-genus display settings here. Genera not listed here still
-# appear on the site with the genus as the common name and the first manifest
-# image as the cover.
-#
-# [flowers.Rosa]
-# common_name = "Rose"
-# cover_photo = "Rosa/PXL_20260329_235810394.MP.jpg"
-# facts = [
-#   "Add any notes you want to display for this flower.",
-# ]
+[flowers."Achillea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Aeonium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Agapanthus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Aloe"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Alstroemeria"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Amphilophium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Amsonia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Anemone"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Anemonoides"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Anigozanthos"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Antirrhinum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Argyranthemum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Aristea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Bauhinia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Bignonia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Bougainvillea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Calendula"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Calystegia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Campanula"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Carpobrotus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Castilleja"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Ceanothus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Cistanthe"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Cistus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Clivia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Cyclamen"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Delphinium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Dianthus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Dietes"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Digitalis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Dimorphotheca"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Gerbera"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Grevillea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Helleborus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Hemerocallis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Hibiscus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Hydrangea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Iris"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Kalanchoe"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lantana"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lavandula"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Leptospermum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Leucospermum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Limonium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lupinus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lycianthes"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Magnolia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Malus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Myosotis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Narcissus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Nemesia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Oenothera"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Oreomecon"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Oxalis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Paeonia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Pelargonium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Phalaenopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Polygala"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Primula"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Prunus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Punica"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Ranunculus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Rhaphiolepis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Rhododendron"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Rosa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Salvia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Sambucus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Strelitzia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Syringa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Tagetes"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Trifolium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Triteleia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Tropaeolum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Tulipa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Verbena"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Vicia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Vinca"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Viola"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Wisteria"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Zantedeschia"]
+common_name = ""
+cover_photo = ""
+facts = []
