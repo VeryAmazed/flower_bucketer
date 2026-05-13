@@ -8,3 +8,9 @@ manifest_csv = "manifest.csv"
 project = "all"
 min_score = 0.65
 nb_results = 3
+
+[site]
+title = "Flower Buckets"
+description = "A generated gallery of locally bucketed flower photos."
+content_toml = "site.toml"
+output_dir = "docs"

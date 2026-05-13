@@ -14,7 +14,7 @@ source .venv/bin/activate
 pip install -e .
 ```
 
-`config.toml` is intentionally ignored by git because it points to local folders.
+`config.toml` is committed so the local bucket paths and site settings are versioned with the project.
 
 Create a Pl@ntNet account at <https://my.plantnet.org/signup>, then generate your private API key at <https://my.plantnet.org/settings/api-key>.
 
@@ -37,9 +37,30 @@ manifest_csv = "data/manifest.csv"
 project = "all"
 min_score = 0.65
 nb_results = 3
+
+[site]
+title = "Flower Buckets"
+description = "A generated gallery of locally bucketed flower photos."
+content_toml = "site.toml"
+output_dir = "docs"
 ```
 
 The inbox can keep your source images. Successfully bucketed images are copied into genus folders, not moved.
+
+`site.toml` is committed and controls how buckets appear on the generated website. Genera not listed in `site.toml` still appear on the site using the genus as the display name and the first manifest image as the cover.
+
+```toml
+[site]
+title = "Flower Buckets"
+description = "A generated gallery of locally bucketed flower photos."
+
+[flowers.Rosa]
+common_name = "Rose"
+cover_photo = "Rosa/PXL_20260329_235810394.MP.jpg"
+facts = [
+  "Add any notes you want to display for this flower.",
+]
+```
 
 ## Commands
 
@@ -73,6 +94,28 @@ Preview the backfill without writing:
 flower-id sync-manifest --dry-run
 ```
 
+Generate the static website:
+
+```sh
+flower-site build
+```
+
+The site generator reads `manifest.csv`, `site.toml`, and the local `bucket_root` from `config.toml`. It recreates `docs/` on every run, writes one index page plus one page per genus, and stores resized web images under `docs/assets/images/`. The original photos remain outside git.
+
+## GitHub Pages
+
+The repository includes a GitHub Actions workflow at `.github/workflows/pages.yml` that deploys the committed `docs/` directory. In the repository settings on GitHub, set Pages to use GitHub Actions as the source.
+
+After adding or changing photos locally:
+
+```sh
+flower-id sync-manifest
+flower-site build
+git add config.toml manifest.csv site.toml docs
+git commit
+git push
+```
+
 ## Behavior
 
 - Supported images are `.jpg`, `.jpeg`, and `.png`.
@@ -85,3 +128,4 @@ flower-id sync-manifest --dry-run
 - Confident matches are copied to `<bucket_root>/<Genus>/<filename>`.
 - The manifest records only successfully bucketed images.
 - `sync-manifest` scans `bucket_root` and adds any bucketed image filename missing from the manifest. Rows added this way have blank Pl@ntNet fields and `notes` set to `synced from bucket folder`.
+- `flower-site build` treats `docs/` as generated output and replaces it on each build.

@@ -1,0 +1,14 @@
+[site]
+title = "Flower Buckets"
+description = "A generated gallery of locally bucketed flower photos."
+
+# Add optional per-genus display settings here. Genera not listed here still
+# appear on the site with the genus as the common name and the first manifest
+# image as the cover.
+#
+# [flowers.Rosa]
+# common_name = "Rose"
+# cover_photo = "Rosa/PXL_20260329_235810394.MP.jpg"
+# facts = [
+#   "Add any notes you want to display for this flower.",
+# ]

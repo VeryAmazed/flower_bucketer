@@ -36,7 +36,7 @@ def load_config(config_path: Path = DEFAULT_CONFIG_PATH) -> AppConfig:
 
     if not config_path.exists():
         raise SystemExit(
-            f"Missing {config_path}. Copy config.example.toml to config.toml and fill in your paths."
+            f"Missing {config_path}. Create config.toml with your local paths and settings."
         )
 
     with config_path.open("rb") as config_file:
