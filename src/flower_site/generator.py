@@ -382,7 +382,8 @@ img {
 .photo-grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 360px));
+  justify-content: center;
   margin: 0 auto;
   max-width: 1120px;
   padding: 24px;
