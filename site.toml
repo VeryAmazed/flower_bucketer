@@ -1,6 +1,11 @@
 [site]
 title = "Flower Buckets"
-description = "A generated gallery of locally bucketed flower photos."
+description = "A generated gallery of locally bucketed flower photos taken by me and my friends/family."
+
+[flowers."Acanthus"]
+common_name = ""
+cover_photo = ""
+facts = []
 
 [flowers."Achillea"]
 common_name = ""
@@ -13,6 +18,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Agapanthus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Allium"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -37,6 +47,16 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Anchusa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Anemonastrum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Anemone"]
 common_name = ""
 cover_photo = ""
@@ -53,6 +73,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Antirrhinum"]
+common_name = "Snapdragon"
+cover_photo = "PXL_20260419_204803134.jpg"
+facts = []
+
+[flowers."Aquilegia"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -67,8 +92,18 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Baptisia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Bauhinia"]
 common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Begonia"]
+common_name = "Begonia"
 cover_photo = ""
 facts = []
 
@@ -82,7 +117,22 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Buddleja"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Bulbine"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Calendula"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Callianthe"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -112,6 +162,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Chionanthus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Cistanthe"]
 common_name = ""
 cover_photo = ""
@@ -127,6 +182,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Coreopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Cyclamen"]
 common_name = ""
 cover_photo = ""
@@ -136,6 +196,14 @@ facts = []
 common_name = ""
 cover_photo = ""
 facts = []
+
+[flowers."Dendranthema"]
+common_name = "Chrysanthemum"
+cover_photo = ""
+facts = [
+  "Chrysanthemum isn't only the common name but also another valid genus classification. You will find both genus names being used.",
+  "Blooms in late summer through autumn.",
+]
 
 [flowers."Dianthus"]
 common_name = ""
@@ -148,11 +216,31 @@ cover_photo = ""
 facts = []
 
 [flowers."Digitalis"]
-common_name = ""
+common_name = "Foxglove"
 cover_photo = ""
 facts = []
 
 [flowers."Dimorphotheca"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Erigeron"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Eschscholzia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Gazania"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Geranium"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -163,6 +251,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Grevillea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Helianthus"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -182,7 +275,17 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Hyacinthoides"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Hydrangea"]
+common_name = "Hydrangea"
+cover_photo = ""
+facts = []
+
+[flowers."Hypericum"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -195,7 +298,9 @@ facts = []
 [flowers."Kalanchoe"]
 common_name = ""
 cover_photo = ""
-facts = []
+facts = [
+  "The images are of Kalanchoe Blossfeldiana, which has the common name Flaming Katy",
+]
 
 [flowers."Lantana"]
 common_name = ""
@@ -242,6 +347,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Mandevilla"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Myosotis"]
 common_name = ""
 cover_photo = ""
@@ -267,6 +377,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Ornithogalum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Oxalis"]
 common_name = ""
 cover_photo = ""
@@ -283,6 +398,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Phalaenopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Polemonium"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -308,8 +428,8 @@ cover_photo = ""
 facts = []
 
 [flowers."Ranunculus"]
-common_name = ""
-cover_photo = ""
+common_name = "Buttercup"
+cover_photo = "PXL_20260502_174328241.jpg"
 facts = []
 
 [flowers."Rhaphiolepis"]
@@ -323,6 +443,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Rosa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Russelia"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -352,6 +477,21 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Taraxacum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Tecoma"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Trachelospermum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Trifolium"]
 common_name = ""
 cover_photo = ""
@@ -372,10 +512,22 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Vanda"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Verbena"]
 common_name = ""
 cover_photo = ""
 facts = []
+
+[flowers."Viburnum"]
+common_name = ""
+cover_photo = "PXL_20260517_203324710.jpg"
+facts = [
+  "The species in the cover photo is a Viburnum Placitum, which has the common name Japanese Snowball",
+]
 
 [flowers."Vicia"]
 common_name = ""
@@ -389,6 +541,11 @@ facts = []
 
 [flowers."Viola"]
 common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Weigela"]
+common_name = "Weigela Bush"
 cover_photo = ""
 facts = []
 
