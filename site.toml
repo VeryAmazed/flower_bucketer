@@ -8,9 +8,12 @@ cover_photo = ""
 facts = []
 
 [flowers."Achillea"]
-common_name = ""
-cover_photo = ""
-facts = []
+common_name = "Yarrow"
+cover_photo = "PXL_20260520_013819760.jpg"
+facts = [
+  "Historically used to treat wounds. Is a hemostat on top of having antibacterial and anti-inflammatory properties",
+  "Name comes from Achilles",
+]
 
 [flowers."Aeonium"]
 common_name = ""
@@ -75,7 +78,9 @@ facts = []
 [flowers."Antirrhinum"]
 common_name = "Snapdragon"
 cover_photo = "PXL_20260419_204803134.jpg"
-facts = []
+facts = [
+  "Apparently the snapdragons on taller stalks and the ones that look like little flower bushes are the same species, they are just cultivated differently (different breeds).",
+]
 
 [flowers."Aquilegia"]
 common_name = ""
@@ -210,6 +215,14 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Dierama"]
+common_name = "Angel's Fishing Rod"
+cover_photo = ""
+facts = [
+  "Also commonly known as Hairbells, Fairybells, and Wandflowers",
+  "The Greek word dierama means funnel",
+]
+
 [flowers."Dietes"]
 common_name = ""
 cover_photo = ""
@@ -221,6 +234,13 @@ cover_photo = ""
 facts = []
 
 [flowers."Dimorphotheca"]
+common_name = "African Daisy"
+cover_photo = ""
+facts = [
+  "The species of the plant in the cover photo is Dimorphotheca sinuata, aka African Daisy, Cape Marigold",
+]
+
+[flowers."Epilobium"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -236,6 +256,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Gazania"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Genista"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -290,6 +315,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Impatiens"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Iris"]
 common_name = ""
 cover_photo = ""
@@ -318,6 +348,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Leucospermum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lewisia"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -373,9 +408,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Oreomecon"]
-common_name = ""
-cover_photo = ""
-facts = []
+common_name = "Poppy Family"
+cover_photo = "PXL_20260405_015440620.MP.jpg"
+facts = [
+  "The cover photo is an Iceland Poppy",
+]
 
 [flowers."Ornithogalum"]
 common_name = ""
@@ -392,8 +429,28 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Paulownia"]
+common_name = "Princess Tree, Empress Tree"
+cover_photo = ""
+facts = [
+  "Named after the Grand Duchess Anna Pavlovna of Russia",
+  "Originally from China and known as the Pheonix Tree (凤凰树) there",
+  "A mature tree can produce up to 20 million tiny seeds a year",
+  "The Chinese historically used the seeds as packing peanuts, which is how they got to America",
+]
+
 [flowers."Pelargonium"]
 common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Penstemon"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Petunia"]
+common_name = "Petunia"
 cover_photo = ""
 facts = []
 
@@ -508,6 +565,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Tulipa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Valeriana"]
 common_name = ""
 cover_photo = ""
 facts = []
