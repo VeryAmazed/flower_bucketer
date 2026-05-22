@@ -3,9 +3,14 @@ title = "Flower Buckets"
 description = "A generated gallery of locally bucketed flower photos taken by me and my friends/family."
 
 [flowers."Acanthus"]
-common_name = ""
+common_name = "Bear's Breeches"
 cover_photo = ""
-facts = []
+facts = [
+  "Nectar producing and depends on butterflies to distribute pollen",
+  "Native to topical and warm temperate regions, such as the Mediterranean Basin and Asia",
+  "Used in traditional Chinese medicine",
+  "Were grown as ornamental plants in Corinth and used in Corinthian Architecture",
+]
 
 [flowers."Achillea"]
 common_name = "Yarrow"
@@ -16,24 +21,36 @@ facts = [
 ]
 
 [flowers."Aeonium"]
-common_name = ""
+common_name = "Tree Houseleek"
 cover_photo = ""
-facts = []
+facts = [
+  "Native to the Canary Islands",
+]
 
 [flowers."Agapanthus"]
-common_name = ""
+common_name = "Lily of the Nile, African Lily"
 cover_photo = ""
-facts = []
+facts = [
+  "Native to Southern Africa",
+  "Blooms in the summer",
+]
 
 [flowers."Allium"]
-common_name = ""
-cover_photo = ""
-facts = []
+common_name = "Garlic"
+cover_photo = "PXL_20260516_191634531.jpg"
+facts = [
+  "The one pictured in the cover photo is actually a garlic plant",
+  "This genus includes essential culinary ingredients like onions, garlic, leeks, shallots, scallions and chives",
+  "Blooms in late spring/early summer",
+]
 
 [flowers."Aloe"]
-common_name = ""
-cover_photo = ""
-facts = []
+common_name = "Aloe"
+cover_photo = "PXL_20260330_020253084.jpg"
+facts = [
+  "The one pictured in the cover image is the Aloe Arborescens a.k.a. the Candelabra Aloe. Arborescens in the species name means treelike",
+  "The most famous species is Aloe Vera",
+]
 
 [flowers."Alstroemeria"]
 common_name = ""
@@ -41,9 +58,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Amphilophium"]
-common_name = ""
+common_name = "Trumpet Vines"
 cover_photo = ""
-facts = []
+facts = [
+  "Native to South America",
+]
 
 [flowers."Amsonia"]
 common_name = ""
@@ -148,9 +167,12 @@ cover_photo = ""
 facts = []
 
 [flowers."Campanula"]
-common_name = ""
+common_name = "Bellflower"
 cover_photo = ""
-facts = []
+facts = [
+  "The cover image is of a Campanula portenschlagiana, a.k.a. the Wall Bellflower, and is native to the Damaltian mountains in Croatia",
+  "Grow in temperate and subtropical regions in the northern hemisphere",
+]
 
 [flowers."Carpobrotus"]
 common_name = ""
@@ -240,6 +262,14 @@ facts = [
   "The species of the plant in the cover photo is Dimorphotheca sinuata, aka African Daisy, Cape Marigold",
 ]
 
+[flowers."Echium"]
+common_name = ""
+cover_photo = ""
+facts = [
+  "The one in the cover photo is Echium Pininana, commonly known as the Tree Echium, Pine Echium, Tower of Jewels",
+  "Native to North Africa and from mainland Europe to Central Asia",
+]
+
 [flowers."Epilobium"]
 common_name = ""
 cover_photo = ""
@@ -251,7 +281,7 @@ cover_photo = ""
 facts = []
 
 [flowers."Eschscholzia"]
-common_name = ""
+common_name = "California Poppy"
 cover_photo = ""
 facts = []
 
@@ -465,9 +495,13 @@ cover_photo = ""
 facts = []
 
 [flowers."Polygala"]
-common_name = ""
+common_name = "Butterflybushes, Milkwort, Snakeroot"
 cover_photo = ""
-facts = []
+facts = [
+  "Both images in the folder right now are of the species Polygala Myrtifolia, a.k.a. Mytle-leaf Milkwort",
+  "It used to be believed that cows that grazed on this plant would produce more milk",
+  "Native to much of the world in temperate and topical zones",
+]
 
 [flowers."Primula"]
 common_name = ""
@@ -500,7 +534,7 @@ cover_photo = ""
 facts = []
 
 [flowers."Rosa"]
-common_name = ""
+common_name = "Rose"
 cover_photo = ""
 facts = []
 
@@ -565,9 +599,12 @@ cover_photo = ""
 facts = []
 
 [flowers."Tulipa"]
-common_name = ""
+common_name = "Tulip"
 cover_photo = ""
-facts = []
+facts = [
+  "Blooms in spring",
+  "Native to Eastern Mediterranean and Central Asia",
+]
 
 [flowers."Valeriana"]
 common_name = ""
@@ -612,11 +649,18 @@ cover_photo = ""
 facts = []
 
 [flowers."Wisteria"]
-common_name = ""
+common_name = "Wisteria"
 cover_photo = ""
-facts = []
+facts = [
+  "Native to East Asia and Eastern/Southeastern U.S.",
+  "The entire plant is poisonous to ingest, but the seeds are especially poisonous",
+]
 
 [flowers."Zantedeschia"]
-common_name = ""
+common_name = "Calla Lily, Arum Lilly"
 cover_photo = ""
-facts = []
+facts = [
+  "Native to Southern Africa",
+  "Invasive species live mostly in coastal prairies and wetlands",
+  "Prefer growing in stream banks and ponds",
+]
