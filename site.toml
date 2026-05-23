@@ -53,9 +53,11 @@ facts = [
 ]
 
 [flowers."Alstroemeria"]
-common_name = ""
+common_name = "Peruvian Lily, Lily of the Incas, Saint Martin's Lily"
 cover_photo = ""
-facts = []
+facts = [
+  "Native to South America",
+]
 
 [flowers."Amphilophium"]
 common_name = "Trumpet Vines"
@@ -65,14 +67,19 @@ facts = [
 ]
 
 [flowers."Amsonia"]
-common_name = ""
+common_name = "Bluestar"
 cover_photo = ""
-facts = []
+facts = [
+  "The images captured are of Amsonia Taberneamontana, Eastern Bluestar",
+]
 
 [flowers."Anchusa"]
-common_name = ""
+common_name = "Bugloss, Alkanets"
 cover_photo = ""
-facts = []
+facts = [
+  "The plants in the images are known as Anchusa Azurea, Garden Anchusa",
+  "The flowers are frequented by bees",
+]
 
 [flowers."Anemonastrum"]
 common_name = ""
@@ -417,6 +424,18 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Melaleuca"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Myoporum"]
+common_name = "Myoporum"
+cover_photo = "PXL_20260417_005732289.jpg"
+facts = [
+  "The image in the cover photo is of Myoporum Parvifolium, Creeping Myoporum",
+]
+
 [flowers."Myosotis"]
 common_name = ""
 cover_photo = ""
@@ -431,6 +450,14 @@ facts = []
 common_name = ""
 cover_photo = ""
 facts = []
+
+[flowers."Nerium"]
+common_name = "Oleander, Rose Laurel, Rosebay"
+cover_photo = ""
+facts = [
+  "Tolerant to both drough and inundation but not frost",
+  "Poisonous and prolonged contact with sap may cause skin irritation and eye inflammation",
+]
 
 [flowers."Oenothera"]
 common_name = ""
@@ -485,6 +512,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Phalaenopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Plumbago"]
 common_name = ""
 cover_photo = ""
 facts = []
