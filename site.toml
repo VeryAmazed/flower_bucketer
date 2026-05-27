@@ -35,6 +35,11 @@ facts = [
   "Blooms in the summer",
 ]
 
+[flowers."Albizia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Allium"]
 common_name = "Garlic"
 cover_photo = "PXL_20260516_191634531.jpg"
@@ -97,6 +102,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Anigozanthos"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Anisodontea"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -169,7 +179,7 @@ cover_photo = ""
 facts = []
 
 [flowers."Calystegia"]
-common_name = ""
+common_name = "Bindweed, Morning Glory"
 cover_photo = ""
 facts = []
 
@@ -180,6 +190,11 @@ facts = [
   "The cover image is of a Campanula portenschlagiana, a.k.a. the Wall Bellflower, and is native to the Damaltian mountains in Croatia",
   "Grow in temperate and subtropical regions in the northern hemisphere",
 ]
+
+[flowers."Canna"]
+common_name = ""
+cover_photo = ""
+facts = []
 
 [flowers."Carpobrotus"]
 common_name = ""
@@ -192,6 +207,16 @@ cover_photo = ""
 facts = []
 
 [flowers."Ceanothus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Centaurea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Cercis"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -226,6 +251,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Dahlia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Delphinium"]
 common_name = ""
 cover_photo = ""
@@ -240,6 +270,11 @@ facts = [
 ]
 
 [flowers."Dianthus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Dicentra"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -269,6 +304,11 @@ facts = [
   "The species of the plant in the cover photo is Dimorphotheca sinuata, aka African Daisy, Cape Marigold",
 ]
 
+[flowers."Echeveria"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Echium"]
 common_name = ""
 cover_photo = ""
@@ -287,8 +327,18 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Erysimum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Eschscholzia"]
 common_name = "California Poppy"
+cover_photo = ""
+facts = []
+
+[flowers."Fuchsia"]
+common_name = ""
 cover_photo = ""
 facts = []
 
@@ -317,6 +367,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Guzmania"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Helianthus"]
 common_name = ""
 cover_photo = ""
@@ -332,7 +387,17 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Hesperaloe"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Hibiscus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Hoya"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -357,7 +422,17 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Ipomoea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Iris"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Jacaranda"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -369,13 +444,18 @@ facts = [
   "The images are of Kalanchoe Blossfeldiana, which has the common name Flaming Katy",
 ]
 
+[flowers."Lagerstroemia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Lantana"]
 common_name = ""
 cover_photo = ""
 facts = []
 
 [flowers."Lavandula"]
-common_name = ""
+common_name = "Lavender"
 cover_photo = ""
 facts = []
 
@@ -399,6 +479,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Lophostemon"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Lupinus"]
 common_name = ""
 cover_photo = ""
@@ -410,9 +495,13 @@ cover_photo = ""
 facts = []
 
 [flowers."Magnolia"]
-common_name = ""
+common_name = "Magnolia"
 cover_photo = ""
-facts = []
+facts = [
+  "White Magnolia is the official flower of Shanghai",
+  "Official Flower of North Korea",
+  "Is the state flower and tree of Mississippi and is also the state flower of Mississippi",
+]
 
 [flowers."Malus"]
 common_name = ""
@@ -550,6 +639,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Pycnosorus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Ranunculus"]
 common_name = "Buttercup"
 cover_photo = "PXL_20260502_174328241.jpg"
@@ -564,6 +658,13 @@ facts = []
 common_name = ""
 cover_photo = ""
 facts = []
+
+[flowers."Romneya"]
+common_name = "California Tree Poppies, Matilija Poppies"
+cover_photo = ""
+facts = [
+  "Can be found along highway 280 between Los Altos and Cupertino in CA",
+]
 
 [flowers."Rosa"]
 common_name = "Rose"
@@ -581,6 +682,16 @@ cover_photo = ""
 facts = []
 
 [flowers."Sambucus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Sarcodes"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Solanum"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -649,6 +760,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Verbena"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Veronica"]
 common_name = ""
 cover_photo = ""
 facts = []
