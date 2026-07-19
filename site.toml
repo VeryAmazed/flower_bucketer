@@ -40,6 +40,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Alcea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Allium"]
 common_name = "Garlic"
 cover_photo = "PXL_20260516_191634531.jpg"
@@ -133,6 +138,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Asclepias"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Baptisia"]
 common_name = ""
 cover_photo = ""
@@ -154,6 +164,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Bougainvillea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Brodiaea"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -191,6 +206,11 @@ facts = [
   "Grow in temperate and subtropical regions in the northern hemisphere",
 ]
 
+[flowers."Campsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Canna"]
 common_name = ""
 cover_photo = ""
@@ -221,6 +241,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Chilopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Chionanthus"]
 common_name = ""
 cover_photo = ""
@@ -242,6 +267,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Coreopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Cosmos"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -304,7 +334,22 @@ facts = [
   "The species of the plant in the cover photo is Dimorphotheca sinuata, aka African Daisy, Cape Marigold",
 ]
 
+[flowers."Diplacus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Drosanthemum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Echeveria"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Echinacea"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -358,6 +403,16 @@ cover_photo = ""
 facts = []
 
 [flowers."Gerbera"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Gladiolus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Glebionis"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -444,6 +499,11 @@ facts = [
   "The images are of Kalanchoe Blossfeldiana, which has the common name Flaming Katy",
 ]
 
+[flowers."Keckiella"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Lagerstroemia"]
 common_name = ""
 cover_photo = ""
@@ -454,12 +514,27 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Lathyrus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Lavandula"]
 common_name = "Lavender"
 cover_photo = ""
 facts = []
 
+[flowers."Leonotis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Leptospermum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Leucanthemum"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -508,7 +583,17 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Malva"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Mandevilla"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Matthiola"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -535,6 +620,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Nelumbo"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Nemesia"]
 common_name = ""
 cover_photo = ""
@@ -548,7 +638,22 @@ facts = [
   "Poisonous and prolonged contact with sap may cause skin irritation and eye inflammation",
 ]
 
+[flowers."Nicotiana"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Nigella"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Oenothera"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Oncidium"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -571,6 +676,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Paeonia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Passiflora"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -601,6 +711,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Phalaenopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Platycodon"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -659,6 +774,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Rhus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Romneya"]
 common_name = "California Tree Poppies, Matilija Poppies"
 cover_photo = ""
@@ -668,6 +788,16 @@ facts = [
 
 [flowers."Rosa"]
 common_name = "Rose"
+cover_photo = ""
+facts = []
+
+[flowers."Rubus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Rudbeckia"]
+common_name = ""
 cover_photo = ""
 facts = []
 
@@ -691,7 +821,17 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Scabiosa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Solanum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Solidago"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -812,3 +952,13 @@ facts = [
   "Invasive species live mostly in coastal prairies and wetlands",
   "Prefer growing in stream banks and ponds",
 ]
+
+[flowers."Zingiber"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Zinnia"]
+common_name = ""
+cover_photo = ""
+facts = []
