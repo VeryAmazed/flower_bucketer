@@ -318,9 +318,9 @@ facts = [
 ]
 
 [flowers."Dietes"]
-common_name = ""
+common_name = "Wild Iris"
 cover_photo = ""
-facts = []
+facts = ["Most are native to Central and South Africa"]
 
 [flowers."Digitalis"]
 common_name = "Foxglove"
@@ -611,9 +611,9 @@ facts = [
 ]
 
 [flowers."Myosotis"]
-common_name = ""
+common_name = "forget-me-nots"
 cover_photo = ""
-facts = []
+facts = ["The genus name comes from the Ancient Greek word for mouse's ear due to the shape of the leaves",]
 
 [flowers."Narcissus"]
 common_name = ""
@@ -621,9 +621,9 @@ cover_photo = ""
 facts = []
 
 [flowers."Nelumbo"]
-common_name = ""
-cover_photo = ""
-facts = []
+common_name = "Lotus"
+cover_photo = "IMG_3874.jpg"
+facts = ["The leaves of the lotus are highly hydrophobic"]
 
 [flowers."Nemesia"]
 common_name = ""
@@ -711,9 +711,9 @@ cover_photo = ""
 facts = []
 
 [flowers."Phalaenopsis"]
-common_name = ""
+common_name = "Moth Orchids"
 cover_photo = ""
-facts = []
+facts = ["Native to Southeast Asia", "The ones in the cover photo are known as moon orchids"]
 
 [flowers."Platycodon"]
 common_name = ""
@@ -781,7 +781,7 @@ facts = []
 
 [flowers."Romneya"]
 common_name = "California Tree Poppies, Matilija Poppies"
-cover_photo = ""
+cover_photo = "PXL_20260525_020335835.jpg"
 facts = [
   "Can be found along highway 280 between Los Altos and Cupertino in CA",
 ]
