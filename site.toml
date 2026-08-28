@@ -106,12 +106,27 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Anemonopsis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Angelonia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Anigozanthos"]
 common_name = ""
 cover_photo = ""
 facts = []
 
 [flowers."Anisodontea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Anthurium"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -158,7 +173,17 @@ common_name = "Begonia"
 cover_photo = ""
 facts = []
 
+[flowers."Bidens"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Bignonia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Bistorta"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -216,6 +241,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Capsicum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Carpobrotus"]
 common_name = ""
 cover_photo = ""
@@ -226,7 +256,17 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Catharanthus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Ceanothus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Celosia"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -237,6 +277,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Cercis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Chelidonium"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -261,7 +306,17 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Clerodendrum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Clivia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Commelina"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -276,12 +331,32 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Crinum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Cuphea"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Cyclamen"]
 common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Cynanchum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Dahlia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Delosperma"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -320,7 +395,9 @@ facts = [
 [flowers."Dietes"]
 common_name = "Wild Iris"
 cover_photo = ""
-facts = ["Most are native to Central and South Africa"]
+facts = [
+  "Most are native to Central and South Africa",
+]
 
 [flowers."Digitalis"]
 common_name = "Foxglove"
@@ -372,6 +449,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Eriocapitella"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Erysimum"]
 common_name = ""
 cover_photo = ""
@@ -379,6 +461,11 @@ facts = []
 
 [flowers."Eschscholzia"]
 common_name = "California Poppy"
+cover_photo = ""
+facts = []
+
+[flowers."Euphorbia"]
+common_name = ""
 cover_photo = ""
 facts = []
 
@@ -397,6 +484,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Gentiana"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Geranium"]
 common_name = ""
 cover_photo = ""
@@ -407,12 +499,22 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Geum"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Gladiolus"]
 common_name = ""
 cover_photo = ""
 facts = []
 
 [flowers."Glebionis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Gomphrena"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -448,6 +550,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Hibiscus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Hosta"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -488,6 +595,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Jacaranda"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Jacobaea"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -549,7 +661,32 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Liatris"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lilium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Limonium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Liriope"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lithotoma"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lobelia"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -565,6 +702,16 @@ cover_photo = ""
 facts = []
 
 [flowers."Lycianthes"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lysimachia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Lythrum"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -603,6 +750,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Melampodium"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Myoporum"]
 common_name = "Myoporum"
 cover_photo = "PXL_20260417_005732289.jpg"
@@ -613,7 +765,9 @@ facts = [
 [flowers."Myosotis"]
 common_name = "forget-me-nots"
 cover_photo = ""
-facts = ["The genus name comes from the Ancient Greek word for mouse's ear due to the shape of the leaves",]
+facts = [
+  "The genus name comes from the Ancient Greek word for mouse's ear due to the shape of the leaves",
+]
 
 [flowers."Narcissus"]
 common_name = ""
@@ -623,7 +777,9 @@ facts = []
 [flowers."Nelumbo"]
 common_name = "Lotus"
 cover_photo = "IMG_3874.jpg"
-facts = ["The leaves of the lotus are highly hydrophobic"]
+facts = [
+  "The leaves of the lotus are highly hydrophobic",
+]
 
 [flowers."Nemesia"]
 common_name = ""
@@ -685,6 +841,11 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Patrinia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Paulownia"]
 common_name = "Princess Tree, Empress Tree"
 cover_photo = ""
@@ -695,12 +856,22 @@ facts = [
   "The Chinese historically used the seeds as packing peanuts, which is how they got to America",
 ]
 
+[flowers."Pedicularis"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Pelargonium"]
 common_name = ""
 cover_photo = ""
 facts = []
 
 [flowers."Penstemon"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Pentas"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -713,9 +884,22 @@ facts = []
 [flowers."Phalaenopsis"]
 common_name = "Moth Orchids"
 cover_photo = ""
-facts = ["Native to Southeast Asia", "The ones in the cover photo are known as moon orchids"]
+facts = [
+  "Native to Southeast Asia",
+  "The ones in the cover photo are known as moon orchids",
+]
+
+[flowers."Phlox"]
+common_name = ""
+cover_photo = ""
+facts = []
 
 [flowers."Platycodon"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Pleroma"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -738,6 +922,11 @@ facts = [
   "It used to be believed that cows that grazed on this plant would produce more milk",
   "Native to much of the world in temperate and topical zones",
 ]
+
+[flowers."Portulaca"]
+common_name = ""
+cover_photo = ""
+facts = []
 
 [flowers."Primula"]
 common_name = ""
@@ -821,7 +1010,22 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Saururus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Scabiosa"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Scaevola"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Silene"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -832,6 +1036,16 @@ cover_photo = ""
 facts = []
 
 [flowers."Solidago"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Sorbus"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Spathiphyllum"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -866,12 +1080,27 @@ common_name = ""
 cover_photo = ""
 facts = []
 
+[flowers."Tragopogon"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Trautvetteria"]
+common_name = ""
+cover_photo = ""
+facts = []
+
 [flowers."Trifolium"]
 common_name = ""
 cover_photo = ""
 facts = []
 
 [flowers."Triteleia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Trollius"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -895,6 +1124,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Vanda"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Veratrum"]
 common_name = ""
 cover_photo = ""
 facts = []
@@ -943,6 +1177,16 @@ facts = [
   "Native to East Asia and Eastern/Southeastern U.S.",
   "The entire plant is poisonous to ingest, but the seeds are especially poisonous",
 ]
+
+[flowers."Wrightia"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Xerochrysum"]
+common_name = ""
+cover_photo = ""
+facts = []
 
 [flowers."Zantedeschia"]
 common_name = "Calla Lily, Arum Lilly"
