@@ -41,9 +41,9 @@ cover_photo = ""
 facts = []
 
 [flowers."Alcea"]
-common_name = ""
+common_name = "Hollyhocks"
 cover_photo = ""
-facts = []
+facts = ["They look like many flowers growing along a towering stem"]
 
 [flowers."Allium"]
 common_name = "Garlic"
@@ -450,8 +450,8 @@ cover_photo = ""
 facts = []
 
 [flowers."Eriocapitella"]
-common_name = ""
-cover_photo = ""
+common_name = "Japanese Anemone"
+cover_photo = "PXL_20260823_000914883.jpg"
 facts = []
 
 [flowers."Erysimum"]
