@@ -43,7 +43,9 @@ facts = []
 [flowers."Alcea"]
 common_name = "Hollyhocks"
 cover_photo = ""
-facts = ["They look like many flowers growing along a towering stem"]
+facts = [
+  "They look like many flowers growing along a towering stem",
+]
 
 [flowers."Allium"]
 common_name = "Garlic"
@@ -741,9 +743,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Matthiola"]
-common_name = ""
-cover_photo = ""
-facts = []
+common_name = "Hoary Stock, Common Stock"
+cover_photo = "image.jpg"
+facts = [
+  "Is classified as a stock plant",
+]
 
 [flowers."Melaleuca"]
 common_name = ""
@@ -1071,6 +1075,11 @@ cover_photo = ""
 facts = []
 
 [flowers."Tecoma"]
+common_name = ""
+cover_photo = ""
+facts = []
+
+[flowers."Thunbergia"]
 common_name = ""
 cover_photo = ""
 facts = []
