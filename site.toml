@@ -369,9 +369,10 @@ cover_photo = ""
 facts = []
 
 [flowers."Dendranthema"]
-common_name = "Chrysanthemum"
-cover_photo = ""
+common_name = "Chrysanthemum, Chrysanthemum x morifolium"
+cover_photo = "PXL_20260514_223320113.jpg"
 facts = [
+  "The flowers in the cover photo are Chrysanthemum x morifolium",
   "Chrysanthemum isn't only the common name but also another valid genus classification. You will find both genus names being used.",
   "Blooms in late summer through autumn.",
 ]
@@ -836,9 +837,12 @@ cover_photo = ""
 facts = []
 
 [flowers."Paeonia"]
-common_name = ""
+common_name = "Peony"
 cover_photo = ""
-facts = []
+facts = [
+  "Have pointy leaves that kind of look like narrower maple leaves",
+  "Can have colors ranging from purple, pink, red, white, yellow",
+]
 
 [flowers."Passiflora"]
 common_name = ""
